@@ -3,10 +3,8 @@ from flask import Flask, jsonify
 app = Flask(__name__)
 
 events = [
-    {'name': 'Richie', 'date': '2020-10-16', 'time': '16:00', 'email': 'richieglennon@gmail.com',
-     'distance': 5, 'pace': '7', 'location': 'haddonfield'},
-    {'name': 'Shane', 'date': '2020-10-18', 'time': '19:00', 'email': 'shane@gmail.com',
-     'distance': 15, 'pace': '6', 'location': 'Easton'}
+    {"date":"2020-10-16","distance":5,"email":"sampleemail1@gmail.com","location":"sampletown1","name":"testperson","pace":"7","time":"16:00"},
+    {"date":"2020-10-18","distance":15,"email":"sampleemail2@gmail.com","location":"sampletown2","name":"testperson2","pace":"6","time":"19:00"}
 ]
 
 
