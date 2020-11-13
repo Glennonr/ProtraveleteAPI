@@ -33,5 +33,11 @@ def post_event(name, date, time, email, distance, pace, location):
     return jsonify(new_event)
 
 
+@app.route('/clearAll', methods=['POST'])
+def clear_events():
+    events.clear()
+    return jsonify({'message': 'Cleared The Database'})
+
+
 if __name__ == '__main__':
     app.run(port=5000)
